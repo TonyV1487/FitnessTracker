@@ -37,12 +37,12 @@ $("#create_new_workout").on("click", async function() {
 
 async function createNewWorkout() {
   const createNewWorkout = await API.createWorkout();
-  const lastWorkout = await API.getLastWorkout();
-  console.log(lastWorkout);
-  const newURL = await function changeURL() {
-    document.setAttribute("href", `/exercise?id=${lastWorkout._id}`);
-  };
-  console.log(newURL);
+  // const lastWorkout = await API.getLastWorkout();
+  // console.log(lastWorkout);
+  // const newURL = await function changeURL() {
+  //   document.setAttribute("href", `/exercise?id=${lastWorkout._id}`);
+  // };
+  // console.log(newURL);
 }
 
 function handleWorkoutTypeChange(event) {
